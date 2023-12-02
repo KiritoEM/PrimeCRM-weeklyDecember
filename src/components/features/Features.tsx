@@ -1,4 +1,8 @@
+import dataHelper from "../../helpers/dataHelper";
+import FeatureCard from "../childrenComponents/FeatureCard";
+
 const Features = (): JSX.Element => {
+  const { featureData } = dataHelper();
   return (
     <section id="features">
       <div className="section-header">
@@ -8,6 +12,16 @@ const Features = (): JSX.Element => {
           brought to you by a company with the long term vision to transform the
           way you work.
         </p>
+      </div>
+
+      <div className="section-content mt-5">
+        <div className="row gx-5">
+          {featureData.map((item, index) => (
+            <div className="col-4" key={index}>
+              <FeatureCard {...item} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

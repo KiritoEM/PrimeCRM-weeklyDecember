@@ -17,8 +17,13 @@
             margin-top: 0.9rem;
             color: $color-secondary01;
             font-size: 17px;
+            font-family: $font-openSans;
             margin: auto;
             width: 60%;
         }
+     }
+
+     .section-content{
+        width: 100%;
      }
 }

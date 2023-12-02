@@ -1,0 +1,15 @@
+.box-feature {
+    width: 100%;
+    border-radius: 5px;
+    padding: 28px;
+
+    &__img {
+        img {
+            width: 45px;
+        }
+    }
+
+    &__content{
+        margin-top: 1rem;
+    }
+}
