@@ -1,9 +1,11 @@
-const Home = () : JSX.Element => {
-    return (
-        <section id="home-page">
-            
-        </section>
-    );
+import Layout from "../Layout";
+
+const Home = (): JSX.Element => {
+  return (
+    <Layout>
+      <section id="home-page"></section>
+    </Layout>
+  );
 };
 
 export default Home;
