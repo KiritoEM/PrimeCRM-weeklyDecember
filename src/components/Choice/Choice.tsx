@@ -1,17 +1,24 @@
 const Choice = (): JSX.Element => {
   return (
     <section id="choice">
-      <div className="row gx-4">
+      <div className="row gx-5">
         <div className="col-6">
           <div className="section-content">
             <div className="header">
-              <h3>Allocate Leads and Simplify Lead Management</h3>
+              <h3>Ways a project management tool can help your team</h3>
               <p>
                 Unique and powerful suite of software to run your entire
                 business, brought to you by a company with the long term vision
                 to transform the way you work.
               </p>
             </div>
+
+            <div className="points"> 
+               <div className="row">
+                 <div className="col-6"></div>
+                 <div className="col-6"></div>
+               </div>
+             </div>
           </div>
         </div>
         <div className="col-6">
