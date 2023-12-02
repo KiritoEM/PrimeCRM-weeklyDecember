@@ -1,0 +1,9 @@
+#navbar{
+    width: 100%;
+    overflow: hidden;
+
+     &__container{
+        width: 100%;
+        @include container;
+     }
+}

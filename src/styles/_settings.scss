@@ -1,4 +1,5 @@
 //color variable
+$bg-color: #FFFFFF;
 $color-primary01: #49DEFF;
 $color-primary02: #4FFFDF;
 $color-primary03: #303030;
@@ -16,4 +17,9 @@ $font-openSans: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     font-family: $font-jost
+}
+
+//couleur du background
+body {
+    background-color: $bg-color;
 }
