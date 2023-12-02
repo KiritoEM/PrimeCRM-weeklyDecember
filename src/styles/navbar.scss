@@ -1,6 +1,9 @@
 #navbar {
     width: 100%;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 200;
 
     &__container {
         display: flex;
@@ -10,6 +13,7 @@
         height: max-content;
         padding-top: 1.7rem;
         padding-bottom: 0.8rem;
+        background-color: #ffffff00;
         @include container;
 
         //logo du navbar
@@ -28,6 +32,7 @@
             height: 100%;
             display: flex;
             align-items: center;
+
 
             ul {
                 height: 100%;

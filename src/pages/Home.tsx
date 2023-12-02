@@ -1,12 +1,10 @@
-import Heading from "../components/Heading";
-import Content from "../components/Content";
+import Hero from "../components/hero/Hero";
 
 const Home = (): JSX.Element => {
   return (
-      <section id="home-page">
-        <Heading />
-        <Content />
-      </section>
+    <section id="home-page">
+      <Hero />
+    </section>
   );
 };
 

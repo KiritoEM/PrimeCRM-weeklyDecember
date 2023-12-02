@@ -1,0 +1,174 @@
+#hero {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 11%;
+    display: flex;
+    padding-right: 0;
+    flex-direction: row;
+
+    .section-cover {
+        width: 100%;
+        height: 100vh;
+        z-index: 5;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .section-header {
+        width: 100%;
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 50;
+        justify-content: center;
+
+        .title {
+
+            h1 {
+                font-weight: 600;
+                color: $color-primary03;
+            }
+        }
+
+        .text {
+            margin-top: 0.8rem;
+
+            p {
+                color: $color-secondary01;
+                font-size: 17px;
+            }
+        }
+
+        .buttons {
+            margin-top: 0.8rem;
+
+            #btn-1 {
+                padding-left: 32px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border-radius: 5px;
+                padding-right: 32px;
+                background-color: $color-primary03;
+                color: #fff;
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            #btn-2{
+                padding-left: 32px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-right: 32px;
+                font-weight: 600;
+            }
+        }
+
+        .line{
+            margin-top: 2.2rem;
+            width: 100%;
+            height: 1.4px;
+            background-color: #DEDEDE;
+        }
+
+        .FiveStar{
+            display: flex;
+            margin-top: 2rem;
+            flex-direction: row;
+            gap: 20px;
+
+             .five-border{
+                width: 30px;
+             }
+
+             .five-logo{
+                img{
+                    width: 70px;
+                    object-fit: cover;
+                }
+             }
+
+             .five-star{
+
+                h5{
+                    font-family: $font-openSans;
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                p{
+                    font-size: 17px;
+                    margin: 0;
+                    color: $color-secondary01;
+                    font-weight: 400;
+                }
+
+                img{
+                  width: 120px;
+                }
+             }
+        }
+    }
+}
+
+.polygon{
+        
+    #p6{
+        position: fixed;
+        z-index: 10;
+        top: 24rem;
+        left: 2rem;
+        width: 28px;
+    }
+
+    #p7{
+        position: fixed;
+        z-index: 10;
+        top: 12rem;
+        left: 33rem;
+        width: 28px;
+    }
+
+    #p3{
+        position: fixed;
+        z-index: 10;
+        top: 32rem;
+        left: 34rem;
+        width: 28px;
+        transform: rotate(-45deg);
+    }
+
+    #p2{
+        position: fixed;
+        z-index: 10;
+        top: 25rem;
+        left: 38rem;
+        width: 28px;
+        transform: rotate(-45deg);
+    }
+
+    #p4{
+        position: fixed;
+        z-index: 10;
+        top: 25rem;
+        left: 38rem;
+        width: 28px;
+        transform: rotate(-45deg);
+    }
+
+    #p1{
+        position: absolute;
+        z-index: 10;
+        top: 15rem;
+        right: 8rem;
+        width: 28px;
+        transform: rotate(-45deg);
+    }
+
+
+}

@@ -20,7 +20,8 @@ $font-openSans: 'Open Sans', sans-serif;
     text-decoration: none
 }
 
-//couleur du background
-body {
-    background-color: $bg-color;
+body{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
