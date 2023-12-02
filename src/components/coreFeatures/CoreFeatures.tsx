@@ -16,7 +16,7 @@ const CoreFeatures = (): JSX.Element => {
   ];
   return (
     <section id="core-features">
-      <div className="row gx-4">
+      <div className="row gx-5">
         <div className="col-6">
           <div className="section-cover">
             <img src="/assets/Corefeature.png" alt="" />
@@ -50,9 +50,6 @@ const CoreFeatures = (): JSX.Element => {
           </div>
         </div>
       </div>
-      {/* <div className="bg">
-          <img src="/assets/bg-corefeatures.png" alt="" />
-      </div> */}
     </section>
   );
 };
