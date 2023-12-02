@@ -2,20 +2,62 @@
     width: 100%;
     overflow: hidden;
     padding-left: 11%;
-    display: flex;
-    padding-right: 0;
-    flex-direction: row;
 
     .section-cover {
         width: 100%;
         height: 100vh;
         z-index: 5;
+        padding-left: 8%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
-        overflow: hidden;
+        background-image: url("../../public/assets/Background.png");
 
-        img {
+        .img-container {
             width: 100%;
-            height: 100%;
+            margin-top: calc(3rem + 17vh);
+
+            img {
+                width: 36%;
+                object-fit: cover;
+            }
+
+            .section-1 {
+                display: flex;
+                flex-direction: row;
+
+                #hero2 {
+                    position: relative;
+                    top: -4.6rem;
+                    left: -44px;
+                }
+            }
+
+            .section-2 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 57px;
+                margin-top: -70px;
+
+                #hero4 {
+                    position: relative;
+                    top: -4.5rem;
+                    left: -57px;
+                }
+            }
+
+            .section-3 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 192px;
+                margin-top: -110px;
+
+                    img{
+                        width: 52%;
+                    }
+            }
         }
     }
 
@@ -60,7 +102,7 @@
                 font-size: 15px;
             }
 
-            #btn-2{
+            #btn-2 {
                 padding-left: 32px;
                 padding-top: 7px;
                 padding-bottom: 7px;
@@ -69,73 +111,78 @@
             }
         }
 
-        .line{
+        .line {
             margin-top: 2.2rem;
             width: 100%;
             height: 1.4px;
             background-color: #DEDEDE;
         }
 
-        .FiveStar{
+        .FiveStar {
             display: flex;
             margin-top: 2rem;
             flex-direction: row;
             gap: 20px;
 
-             .five-border{
+            .five-border {
                 width: 30px;
-             }
+            }
 
-             .five-logo{
-                img{
+            .five-logo {
+                img {
                     width: 70px;
                     object-fit: cover;
                 }
-             }
+            }
 
-             .five-star{
+            .five-star {
 
-                h5{
+                h5 {
                     font-family: $font-openSans;
                     font-weight: 700;
                     margin: 0;
                 }
 
-                p{
+                p {
                     font-size: 17px;
                     margin: 0;
                     color: $color-secondary01;
                     font-weight: 400;
                 }
 
-                img{
-                  width: 120px;
+                img {
+                    width: 120px;
                 }
-             }
+            }
         }
     }
 }
 
-.polygon{
-        
-    #p6{
-        position: fixed;
+.polygon {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+
+    #p6 {
+        position: absolute;
         z-index: 10;
         top: 24rem;
         left: 2rem;
         width: 28px;
     }
 
-    #p7{
-        position: fixed;
+    #p7 {
+        position: absolute;
         z-index: 10;
         top: 12rem;
         left: 33rem;
         width: 28px;
     }
 
-    #p3{
-        position: fixed;
+    #p3 {
+        position: absolute;
         z-index: 10;
         top: 32rem;
         left: 34rem;
@@ -143,8 +190,8 @@
         transform: rotate(-45deg);
     }
 
-    #p2{
-        position: fixed;
+    #p2 {
+        position: absolute;
         z-index: 10;
         top: 25rem;
         left: 38rem;
@@ -152,8 +199,8 @@
         transform: rotate(-45deg);
     }
 
-    #p4{
-        position: fixed;
+    #p4 {
+        position: absolute;
         z-index: 10;
         top: 25rem;
         left: 38rem;
@@ -161,7 +208,7 @@
         transform: rotate(-45deg);
     }
 
-    #p1{
+    #p1 {
         position: absolute;
         z-index: 10;
         top: 15rem;

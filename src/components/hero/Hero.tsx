@@ -5,6 +5,11 @@ interface Ipolygon {
   icon: string;
 }
 
+interface IheroImg {
+  img_src: string;
+  id?: string;
+}
+
 const Hero = (): JSX.Element => {
   const polygonIcon: Ipolygon[] = [
     {
@@ -29,6 +34,7 @@ const Hero = (): JSX.Element => {
       id: "p7",
     },
   ];
+
   return (
     <Fragment>
       <section id="hero">
@@ -76,7 +82,20 @@ const Hero = (): JSX.Element => {
 
           <div className="col-8">
             <div className="section-cover">
-              <img src="/assets/Background.png" alt="" />
+              <div className="img-container">
+                <div className="section-1">
+                  <img src="/assets/hero1.png" alt="" />
+                  <img src="/assets/hero2.png" alt="" id="hero2"/>
+                </div>
+                <div className="section-2">
+                  <img src="/assets/hero3.png" alt="" />
+                  <img src="/assets/hero4.png" alt="" id="hero4" />
+                </div>
+
+                <div className="section-3">
+                     <img src="/assets/hero5.png" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
