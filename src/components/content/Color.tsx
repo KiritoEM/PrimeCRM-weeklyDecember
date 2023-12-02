@@ -1,3 +1,5 @@
+import ColorCard from "../childrenComponents/ColorCard";
+
 const Color = (): JSX.Element => {
   return (
     <section id="color">
@@ -6,16 +8,8 @@ const Color = (): JSX.Element => {
       </div>
       <div className="section-content">
         <div className="section-primary">
-          <div className="row">
-            <div className="col-3">
-              <div className="box-color">
-                <div className="box-color__bg"></div>
-                <div className="box-color__content">
-                  <p className="box-label"></p>
-                  <p className="box-palet"></p>
-                </div>
-              </div>
-            </div>
+          <div className="row gx-0">
+            <ColorCard />
           </div>
         </div>
         <div className="section-secondary">
