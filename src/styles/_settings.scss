@@ -1,0 +1,19 @@
+//color variable
+$color-primary01: #49DEFF;
+$color-primary02: #4FFFDF;
+$color-primary03: #303030;
+$color-secondary01: #4E4E4E;
+$color-secondary02: #DEDEDE;
+$color-secondary03: #F4F4F4;
+$color-secondary04: #F9F9F9;
+
+//font variable
+$font-jost: 'Jost', sans-serif;
+$font-openSans: 'Open Sans', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-jost
+}
