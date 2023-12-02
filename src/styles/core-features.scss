@@ -1,3 +1,72 @@
-#core-features{
-    
+.col-6 {
+    height: max-content;
+}
+
+#core-features {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @include container;
+
+    .section-cover {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .section-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+
+        .header {
+            h3 {
+                color: $color-primary03;
+                font-weight: 600;
+            }
+
+            p {
+                margin-top: 0.9rem;
+                color: $color-secondary01;
+                font-size: 17px;
+                font-family: $font-openSans;
+                width: 95%;
+            }
+        }
+
+        .points {
+            width: 95%;
+            margin-top: -10px;
+
+            .item {
+                margin-top: 3rem;
+
+                .subtitle {
+
+                    h5 {
+                        color: $color-primary03;
+                        font-weight: 600;
+                    }
+                }
+
+                .text {
+                    padding-left: 53px;
+
+                    p {
+                        color: $color-secondary01;
+                        font-family: $font-openSans;
+                    }
+                }
+            }
+        }
+    }
 }
