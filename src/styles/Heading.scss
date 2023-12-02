@@ -1,0 +1,28 @@
+#heading {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .title {
+        text-align: center;
+
+        h3 {
+            color: $color-primary03;
+            font-weight: 600;
+        }
+    }
+
+    .text {
+        text-align: center;
+        margin-top: 15px;
+
+        p {
+            color: $color-secondary01;
+            font-size: 17px;
+            width: 42%;
+            margin: auto;
+        }
+    }
+}
