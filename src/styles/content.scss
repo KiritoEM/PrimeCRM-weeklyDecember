@@ -31,33 +31,12 @@
                     width: 100%;
                     padding: 0;
                     margin-top: -10px;
+                }
 
-                    .box-color {
-                        width: 95%;
-
-                        &__bg {
-                            width: 188px;
-                            height: 188px;
-                            border-radius: 30px;
-                        }
-
-                        &__content {
-                            margin-top: 1rem;
-
-                            .label {
-                                font-weight: bold;
-                                font-size: 17px;
-                                color: $color-primary03;
-                                padding: 0;
-                                margin: 0;
-                            }
-
-                            .palet {
-                                margin-top: 6px;
-                                color: $color-secondary01;
-                            }
-                        }
-                    }
+                .section-secondary {
+                    width: 100%;
+                    padding: 0;
+                    margin-top: -10px;
                 }
             }
         }

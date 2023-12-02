@@ -31,16 +31,19 @@ export default function dataHelper() {
     { label: "Login", id: "btn-login" },
   ];
 
-  const colorData : IcolorData = {
-     primary:[
-        {bg :"#49DEFF", label:"Primary - 01", palet:"49DEFF"},
-        {bg :"#4FFFDF", label:"Primary - 01", palet:"4FFFDF"},
-        {bg :"#303030", label:"Primary - 01", palet:"303030"},
-     ],
-     secondary:[
-        {bg :"", label:"", palet:""}
-     ]
-  }
+  const colorData: IcolorData = {
+    primary: [
+      { bg: "#49DEFF", label: "Primary - 01", palet: "49DEFF" },
+      { bg: "#4FFFDF", label: "Primary - 02", palet: "4FFFDF" },
+      { bg: "#303030", label: "Primary - 02", palet: "303030" },
+    ],
+    secondary: [
+      { bg: "#4E4E4E", label: "Secondary - 01", palet: "4E4E4E" },
+      { bg: "#DEDEDE", label: "Secondary - 02", palet: "DEDEDE" },
+      { bg: "#F4F4F4", label: "Secondary - 03", palet: "F4F4F4" },
+      { bg: "#F9F9F9", label: "Secondary - 04", palet: "F9F9F9" },
+    ],
+  };
 
-  return { menuItemData };
+  return { menuItemData, colorData };
 }

@@ -1,11 +1,22 @@
-const ColorCard = (): JSX.Element => {
+import React from "react";
+
+interface Iprops {
+  bg: string;
+  label: string;
+  palet: string;
+}
+
+const ColorCard: React.FC<Iprops> = ({ bg, label, palet }): JSX.Element => {
   return (
-    <div className="col-4">
+    <div className="col-3">
       <div className="box-color">
-        <div className="box-color__bg"></div>
+        <div
+          className="box-color__bg"
+          style={{ backgroundColor: `${bg}` }}
+        ></div>
         <div className="box-color__content">
-          <p className="label">Primary - 01</p>
-          <p className="palet">49DEFF</p>
+          <p className="label">{label}</p>
+          <p className="palet">{palet}</p>
         </div>
       </div>
     </div>
