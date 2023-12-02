@@ -1,4 +1,7 @@
+import dataHelper from "../../helpers/dataHelper";
+
 const Choice = (): JSX.Element => {
+  const { choiceData } = dataHelper();
   return (
     <section id="choice">
       <div className="row gx-5">
@@ -13,12 +16,23 @@ const Choice = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="points"> 
-               <div className="row">
-                 <div className="col-6"></div>
-                 <div className="col-6"></div>
-               </div>
-             </div>
+            <div className="points">
+              <div className="row">
+                {choiceData.map((item, index) => (
+                  <div className="col-6" key={index}>
+                    <div className="box-points">
+                      <div className="box-points__img" id={item.id}>
+                        <img src={item.img} alt="" />
+                      </div>
+                      <div className="box-points__content">
+                        <h5>{item.title}</h5>
+                        <p>{item.text}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-6">

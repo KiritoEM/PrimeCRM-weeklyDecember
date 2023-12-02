@@ -11,6 +11,13 @@ interface IfeatureData {
   text: string;
 }
 
+interface IchoiceData {
+  img: string;
+  title: string;
+  text: string;
+  id?: string
+}
+
 export default function dataHelper() {
   const menuItemData: ImenuItem[] = [
     { label: "Solution", url: "/" },
@@ -42,5 +49,19 @@ export default function dataHelper() {
     },
   ];
 
-  return { menuItemData, featureData };
+  const choiceData: IchoiceData[] = [
+    {
+      img: "/assets/choiceicon-1.png",
+      id: "col-1",
+      text: "cards and make more sales while chatting",
+      title: "CRM Security",
+    },
+    {
+      img: "/assets/choiceicon-2.png",
+      text: "Show off your goods in elegant product cards and mak.",
+      title: "Marketing Hub",
+    },
+  ];
+
+  return { menuItemData, featureData, choiceData };
 }
