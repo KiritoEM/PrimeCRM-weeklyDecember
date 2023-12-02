@@ -1,0 +1,114 @@
+    #clients {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 3rem;
+        @include container;
+
+        .section-header {
+            text-align: center;
+
+            h3 {
+                color: $color-primary03;
+                font-weight: 600;
+            }
+
+            p {
+                margin-top: 0.9rem;
+                color: $color-secondary01;
+                font-size: 17px;
+                font-family: $font-openSans;
+                margin: auto;
+                width: 60%;
+            }
+        }
+
+        .section-content {
+            margin-top: 3rem;
+
+            .line-1 {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height: 100%;
+
+                .logo {
+                    width: 211px;
+                    height: 5.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid #C5C5C5;
+                    border-right: 1px solid #C5C5C5;
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+
+                    img {
+                        width: 115px;
+                        text-align: center;
+                    }
+                }
+
+                .img-last {
+                    border-right: 0;
+                }
+            }
+
+            .line-2 {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+
+                .logo {
+                    width: 215px;
+                    height: 6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid #C5C5C5;
+                    border-right: 1px solid #C5C5C5;
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+
+                    img {
+                        width: 115px;
+                        text-align: center;
+                    }
+                }
+
+                .img-last {
+                    border-right: 0;
+                }
+            }
+
+            .line-3 {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height: 100%;
+
+                .logo {
+                    width: 211px;
+                    height: 5.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid #C5C5C5;
+                    border-right: 1px solid #C5C5C5;
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+
+                    img {
+                        width: 115px;
+                        text-align: center;
+                    }
+                }
+
+                .img-last {
+                    border-right: 0;
+                }
+            }
+        }
+    }

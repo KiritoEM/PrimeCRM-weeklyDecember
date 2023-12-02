@@ -15,7 +15,18 @@ interface IchoiceData {
   img: string;
   title: string;
   text: string;
-  id?: string
+  id?: string;
+}
+
+interface IclientData {
+  line1: Iline[];
+  line2: Iline[];
+  line3: Iline[]
+}
+
+interface Iline {
+  img_src: string;
+  class?: string;
 }
 
 export default function dataHelper() {
@@ -63,5 +74,27 @@ export default function dataHelper() {
     },
   ];
 
-  return { menuItemData, featureData, choiceData };
+  const clienData: IclientData = {
+    line1: [
+      { img_src: "/assets/client1.png", class: "img-first" },
+      { img_src: "/assets/client2.png" },
+      { img_src: "/assets/client3.png" },
+      { img_src: "/assets/client4.png", class: "img-last" },
+    ],
+    line2: [
+      { img_src: "/assets/client5.svg", class: "img-first" },
+      { img_src: "/assets/client6.png" },
+      { img_src: "/assets/client7.png" },
+      { img_src: "/assets/client8.png" },
+      { img_src: "/assets/client9.png", class: "img-last" },
+    ],
+    line3: [
+      { img_src: "/assets/client10.png", class: "img-first" },
+      { img_src: "/assets/client11.png" },
+      { img_src: "/assets/client12.png" },
+      { img_src: "/assets/client13.png", class: "img-last" },
+    ],
+  };
+
+  return { menuItemData, featureData, choiceData, clienData };
 }
