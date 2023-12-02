@@ -50,6 +50,9 @@ const CoreFeatures = (): JSX.Element => {
           </div>
         </div>
       </div>
+      {/* <div className="bg">
+          <img src="/assets/bg-corefeatures.png" alt="" />
+      </div> */}
     </section>
   );
 };

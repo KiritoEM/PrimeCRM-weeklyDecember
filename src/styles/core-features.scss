@@ -4,9 +4,13 @@
 
 #core-features {
     width: 100%;
+    height: 100%;
     overflow: hidden;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    background-image: url("../../public/assets/bg-corefeatures.png");
+    background-size: 38% 42rem;
+    background-repeat: no-repeat;
     @include container;
 
     .section-cover {
