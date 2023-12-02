@@ -9,10 +9,13 @@
         position: relative;
         top: -35px;
         z-index: 5;
-        padding-top: 0;
-        padding-bottom: 2.6rem;
+        min-height: 43rem;
+        margin-top: 5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        overflow: hidden;
         background-image: url("../../public/assets/bg-choice.png");
-        background-size: 38% 42rem;
+        background-size: 44% 42rem;
         background-repeat: no-repeat;
         background-position: right;
         @include container;
@@ -89,6 +92,22 @@
                             font-family: $font-openSans;
                         }
                     }
+                }
+            }
+
+            .button {
+                margin-top: 1.5rem;
+
+                .btn {
+                    padding-left: 32px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    border-radius: 5px;
+                    padding-right: 32px;
+                    background-color: $color-primary03;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 15px;
                 }
             }
         }

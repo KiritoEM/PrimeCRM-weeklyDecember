@@ -15,9 +15,8 @@ const Choice = (): JSX.Element => {
                 to transform the way you work.
               </p>
             </div>
-
             <div className="points">
-              <div className="row">
+              <div className="row gx-3">
                 {choiceData.map((item, index) => (
                   <div className="col-6" key={index}>
                     <div className="box-points">
@@ -32,6 +31,11 @@ const Choice = (): JSX.Element => {
                   </div>
                 ))}
               </div>
+            </div>
+            <div className="button">
+                 <button className="btn">
+                     Get Started
+                 </button>
             </div>
           </div>
         </div>
