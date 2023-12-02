@@ -10,24 +10,61 @@
         height: 100%;
         overflow: hidden;
         padding: 63px;
+        padding-top: 87px;
         background-image: url("./../../public/assets/news-letter-bg.png");
         background-size: cover;
         border-radius: 30px;
 
         .section-header {
             width: 100%;
+            display: flex;
+            gap: 65px;
+            margin: auto;
+            padding: 0;
 
-            h3 {
-                color: #fff;
-                font-weight: 600;
+            .title {
+                width: 45%;
+
+                h3 {
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-top: 10px;
+                    color: #fff;
+                    font-size: 17px;
+                    font-family: $font-openSans;
+                    width: 95%;
+                }
             }
 
-            p {
-                margin-top: 10px;
-                color: #fff;
-                font-size: 17px;
-                font-family: $font-openSans;
-                width: 95%;
+            .email {
+
+                p {
+                    color: #fff;
+                }
+
+                .form {
+                    width: 100%;
+                     display: flex;
+                        flex-direction: row;
+
+                     .input{
+
+                        input{
+                            width: 100%;
+                         }
+                     }
+
+                     .button-send{
+
+                         .btn{
+                            color: #fff;
+                         }
+                     }
+
+                }
             }
         }
     }
