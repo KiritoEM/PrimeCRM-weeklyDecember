@@ -1,0 +1,34 @@
+#new-letter {
+    width: 100%;
+    height: 40rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    @include container;
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 63px;
+        background-image: url("./../../public/assets/news-letter-bg.png");
+        background-size: cover;
+        border-radius: 30px;
+
+        .section-header {
+            width: 100%;
+
+            h3 {
+                color: #fff;
+                font-weight: 600;
+            }
+
+            p {
+                margin-top: 10px;
+                color: #fff;
+                font-size: 17px;
+                font-family: $font-openSans;
+                width: 95%;
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@ import Features from "../components/features/Features";
 import CoreFeatures from "../components/coreFeatures/CoreFeatures";
 import Choice from "../components/Choice/Choice";
 import Clients from "../components/clients/Clients";
+import NewsLetter from "../components/newsLetter/NewsLetter";
 
 const Home = (): JSX.Element => {
   return (
@@ -12,6 +13,7 @@ const Home = (): JSX.Element => {
       <CoreFeatures />
       <Choice />
       <Clients />
+      <NewsLetter />
     </section>
   );
 };
