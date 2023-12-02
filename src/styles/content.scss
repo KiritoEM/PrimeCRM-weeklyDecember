@@ -1,3 +1,6 @@
+@import "./content/color.scss";
+@import "./content/text.scss";
+
 #content {
     width: 100%;
     overflow: hidden;
@@ -7,38 +10,5 @@
     &__container {
         width: 100%;
         @include container;
-
-        #color {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            gap: 18%;
-            padding: 0;
-
-            .section-header {
-                margin-top: 2px;
-
-                h2 {
-                    color: $color-primary03;
-                    font-weight: 600;
-                }
-            }
-
-            .section-content {
-                width: 100%;
-
-                .section-primary {
-                    width: 100%;
-                    padding: 0;
-                    margin-top: -10px;
-                }
-
-                .section-secondary {
-                    width: 100%;
-                    padding: 0;
-                    margin-top: -10px;
-                }
-            }
-        }
     }
 }
