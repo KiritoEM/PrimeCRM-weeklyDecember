@@ -9,7 +9,7 @@ const Layout: React.FC<Ichildren> = ({ children }): JSX.Element => {
   return (
     <Fragment>
       <Navbar />
-      {children}
+      <main>{children}</main>
     </Fragment>
   );
 };

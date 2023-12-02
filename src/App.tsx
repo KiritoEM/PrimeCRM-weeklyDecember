@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import Home from "./pages/Home";
+import Layout from "./Layout";
 
 const App = (): JSX.Element => {
   return (
-    <Fragment>
-      <Home />
-    </Fragment>
+    <Layout>
+        <Home />
+    </Layout>
   );
 };
 

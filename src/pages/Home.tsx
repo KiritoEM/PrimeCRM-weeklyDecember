@@ -1,13 +1,12 @@
-import Layout from "../Layout";
 import Heading from "../components/Heading";
+import Content from "../components/Content";
 
 const Home = (): JSX.Element => {
   return (
-    <Layout>
       <section id="home-page">
         <Heading />
+        <Content />
       </section>
-    </Layout>
   );
 };
 
