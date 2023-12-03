@@ -18,10 +18,6 @@ const Hero = (): JSX.Element => {
       id: "p1",
     },
     {
-      icon: "/assets/p2.png",
-      id: "p2",
-    },
-    {
       icon: "/assets/p3.png",
       id: "p3",
     },
