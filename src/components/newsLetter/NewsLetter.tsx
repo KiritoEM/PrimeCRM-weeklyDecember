@@ -1,7 +1,10 @@
-const NewsLetter = () => {
+import Flip from "react-reveal/Flip";
+
+const NewsLetter = () : JSX.Element => {
   return (
     <section id="new-letter">
       <div className="bg">
+        <Flip bottom>
         <div className="section-header">
           <div className="title">
             <h3>Sell | Serve | Automate</h3>
@@ -21,9 +24,13 @@ const NewsLetter = () => {
             </div>
           </div>
         </div>
+        </Flip>
+
+        <Flip bottom>
         <div className="section-img">
             <img src="/assets/img-newsletter.png" alt="" />
         </div>
+        </Flip>
       </div>
     </section>
   );

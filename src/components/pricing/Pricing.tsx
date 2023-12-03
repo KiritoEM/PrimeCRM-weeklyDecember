@@ -1,11 +1,13 @@
 import PricingPoints from "../childrenComponents/PricingPoints";
 import dataHelper from "../../helpers/dataHelper";
 import { Fragment } from "react";
+import Fade from "react-reveal/Fade";
 
 const Pricing = (): JSX.Element => {
   const { pricingData } = dataHelper();
   return (
     <section id="pricing">
+      <Fade bottom cascade>
       <div className="section-header">
         <h3>Deliver End-To-End Retail Billing & Solutions</h3>
         <p>
@@ -14,6 +16,8 @@ const Pricing = (): JSX.Element => {
           way you work.
         </p>
       </div>
+      </Fade>
+      <Fade bottom cascade>
       <div className="section-content">
         <div className="bg">
           <img src="/assets/pricing-bg.png" alt="" />
@@ -83,6 +87,7 @@ const Pricing = (): JSX.Element => {
           </div>
         </div>
       </div>
+      </Fade>
     </section>
   );
 };

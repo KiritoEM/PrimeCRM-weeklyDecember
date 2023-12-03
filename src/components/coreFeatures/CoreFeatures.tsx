@@ -1,3 +1,5 @@
+import Fade from "react-reveal/Fade";
+
 interface Ipoints {
   text: string;
   title: string;
@@ -17,38 +19,43 @@ const CoreFeatures = (): JSX.Element => {
   return (
     <section id="core-features">
       <div className="row gx-1 gx-md-5  gy-5 gy-md-2">
-        <div className="col-md-5 col-lg-6">
-          <div className="section-cover">
-            <img src="/assets/Corefeature.png" alt="" />
-          </div>
-        </div>
-        <div className="col-md-7 col-lg-6">
-          <div className="section-content">
-            <div className="header">
-              <h3>Allocate Leads and Simplify Lead Management</h3>
-              <p>
-                Unique and powerful suite of software to run your entire
-                business, brought to you by a company with the long term vision
-                to transform the way you work.
-              </p>
-            </div>
-            <div className="points">
-              {pointData.map((item, index) => (
-                <div className="item" key={index}>
-                  <div className="subtitle">
-                    <h5>
-                      <img src="/assets/point.png" alt="" className="mx-3" />
-                      {item.title}
-                    </h5>
-                  </div>
-                  <div className="text">
-                    <p>{item.text}</p>
-                  </div>
-                </div>
-              ))}
+        <Fade left>
+          <div className="col-md-5 col-lg-6">
+            <div className="section-cover">
+              <img src="/assets/Corefeature.png" alt="" />
             </div>
           </div>
-        </div>
+        </Fade>
+
+        <Fade right>
+          <div className="col-md-7 col-lg-6">
+            <div className="section-content">
+              <div className="header">
+                <h3>Allocate Leads and Simplify Lead Management</h3>
+                <p>
+                  Unique and powerful suite of software to run your entire
+                  business, brought to you by a company with the long term
+                  vision to transform the way you work.
+                </p>
+              </div>
+              <div className="points">
+                {pointData.map((item, index) => (
+                  <div className="item" key={index}>
+                    <div className="subtitle">
+                      <h5>
+                        <img src="/assets/point.png" alt="" className="mx-3" />
+                        {item.title}
+                      </h5>
+                    </div>
+                    <div className="text">
+                      <p>{item.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Fade>
       </div>
     </section>
   );
