@@ -1,4 +1,5 @@
 import MenuItems from "./MenuItems";
+import MenuItemsResponsive from "./MenuItemsResponsive";
 
 const Navbar = (): JSX.Element => {
   return (
@@ -7,10 +8,10 @@ const Navbar = (): JSX.Element => {
         <div className="section-logo">
           <img src="/assets/Logo_with_text.png" alt="" />
         </div>
-
         {/* ==============menu items components================= */}
         <MenuItems />
       </div>
+      <MenuItemsResponsive />
     </nav>
   );
 };

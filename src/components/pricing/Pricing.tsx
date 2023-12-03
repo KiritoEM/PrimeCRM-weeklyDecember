@@ -39,13 +39,13 @@ const Pricing = (): JSX.Element => {
                   <div className="line"></div>
                   <Fragment>
                     {pricingData.starter.map((item, index) => (
-                      <PricingPoints id={""} key={index} {...item} />
+                     <PricingPoints key={index} {...item} />
                     ))}
                   </Fragment>
                   <div className="button">
-                     <button className="btn"  id="btn-1">
-                          Get Started
-                     </button>
+                    <button className="btn" id="btn-1">
+                      Get Started
+                    </button>
                   </div>
                 </div>
               </div>
@@ -69,13 +69,13 @@ const Pricing = (): JSX.Element => {
                   <div className="line"></div>
                   <Fragment>
                     {pricingData.pro.map((item, index) => (
-                      <PricingPoints id={""} key={index} {...item} />
+                      <PricingPoints key={index} {...item} />
                     ))}
                   </Fragment>
                   <div className="button">
-                     <button className="btn"  id="btn-2">
-                          Get Started
-                     </button>
+                    <button className="btn" id="btn-2">
+                      Get Started
+                    </button>
                   </div>
                 </div>
               </div>

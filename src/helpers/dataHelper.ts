@@ -231,7 +231,7 @@ export default function dataHelper() {
     starter: [
       { text: "Outbound email and <b>in-product</b>" },
       { text: "messaging" },
-      { text: "<b>Push messages</b> & notifications" },
+      { text: "<b>Push messages</b> & notifications" , id:"colored"},
       { text: "Custom bots" },
       { text: "Mobile Carousels" },
       { text: "<b>Multi-channel</b> campaigns" },
@@ -240,7 +240,7 @@ export default function dataHelper() {
     pro: [
       { text: "Outbound email and <b>in-product</b>" },
       { text: "messaging" },
-      { text: "<b>Push messages</b> & notifications" },
+      { text: "<b>Push messages</b> & notifications"  , id:"colored" },
       { text: "Custom bots" },
       { text: "Mobile Carousels" },
       { text: "<b>Multi-channel</b> campaigns" },
