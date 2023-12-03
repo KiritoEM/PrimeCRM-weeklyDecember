@@ -5,7 +5,7 @@ const Functioning = (): JSX.Element => {
   const { functioningData } = dataHelper();
   return (
     <section id="functioning">
-      <div className="row gy-5 gy-lg-2">
+      <div className="row gy-5 gy-lg-2">  
         <Fade left cascade>
           <div className="col-lg-5">
             <div className="section-header">
