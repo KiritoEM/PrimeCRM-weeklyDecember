@@ -62,18 +62,18 @@ interface Istatistic {
   id?: string;
 }
 
-interface Ifooter{
-   socialIcons: IfooterIcon[];
-   link: IfooterText[];
-   services: IfooterText[]
+interface Ifooter {
+  socialIcons: IfooterIcon[];
+  link: IfooterText[];
+  services: IfooterText[];
 }
 
-interface IfooterIcon{
-  icon: string
+interface IfooterIcon {
+  icon: string;
 }
 
-interface IfooterText{
-  text: string
+interface IfooterText {
+  text: string;
 }
 
 export default function dataHelper() {
@@ -252,17 +252,29 @@ export default function dataHelper() {
     ],
   };
 
-  const footerData : Ifooter= {
-    socialIcons:[
-       {icon:"/assets/Instagram.png"},
-       {icon:"/assets/Facebook.png"},
-       {icon:"/assets/Twiter.png"},
-       {icon:"/assets/Linkedin.png"},
-       {icon:"/assets/Youtube.png"},
+  const footerData: Ifooter = {
+    socialIcons: [
+      { icon: "/assets/Instagram.png" },
+      { icon: "/assets/Facebook.png" },
+      { icon: "/assets/Twiter.png" },
+      { icon: "/assets/Linkedin.png" },
+      { icon: "/assets/Youtube.png" },
     ],
-    link:[],
-    services:[],
-  }
+    link: [
+      { text: "Solution" },
+      { text: "Industries" },
+      { text: "Products" },
+      { text: "Ressources" },
+      { text: "Pricing" },
+    ],
+    services: [
+      { text: "Sale" },
+      { text: "Marketing" },
+      { text: "Real Estate" },
+      { text: "Automotive" },
+      { text: "Education" },
+    ],
+  };
 
   return {
     menuItemData,
@@ -273,6 +285,6 @@ export default function dataHelper() {
     functioningData,
     statisticsData,
     pricingData,
-    footerData
+    footerData,
   };
 }
