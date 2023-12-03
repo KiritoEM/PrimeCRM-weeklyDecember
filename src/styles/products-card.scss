@@ -23,7 +23,7 @@
         width: 100%;
         height: max-content;
 
-        .content-container {
+        .item {
             display: flex;
             flex-direction: row;
             margin-top: 2rem;
@@ -40,10 +40,9 @@
 
             .text {
                 width: 100%;
-                height: max-content;
+                height: 90px;
                 border-bottom: 1px solid #d6d3d3;
-                padding-top: 20px;
-                padding-bottom: 20px;
+                margin: 0;
 
                 p {
                     color: $color-secondary01;
@@ -58,6 +57,10 @@
                     font-weight: 500;
                     margin: 0;
                 }
+            }
+
+            #last {
+                border-bottom: 0;
             }
         }
     }

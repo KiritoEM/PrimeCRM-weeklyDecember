@@ -1,21 +1,21 @@
-const ProductsCard = (): JSX.Element => {
+interface Iprops {
+  img: string;
+  title: string;
+}
+
+const ProductsCard: React.FC<Iprops> = ({ img, title }): JSX.Element => {
   return (
-    <article className="box-products">
-      <div className="box-products__header">
-        <p>In Need</p>
-      </div>
-      <div className="box-products__content">
-        <div className="content-container">
-          <div className="img">
-            <img src="/assets/products-icon1.png" alt="" />
-          </div>
-          <div className="text">
-            <h5>Sales</h5>
-            <p>Unique and powerful suite sale run your entire business</p>
-          </div>
+    <div className="box-products__content">
+      <div className="item">
+        <div className="img">
+          <img src={`${img}`} alt="" />
+        </div>
+        <div className="text">
+          <h5>{title}</h5>
+          <p>Unique and powerful suite sale run your entire business</p>
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 

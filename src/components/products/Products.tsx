@@ -1,6 +1,8 @@
 import ProductsCard from "../childrenComponents/ProductsCard";
+import dataHelper from "../../helpers/dataHelper";
 
 const Products = (): JSX.Element => {
+  const { productsData } = dataHelper();
   return (
     <section id="products">
       <div className="section-header">
@@ -14,9 +16,36 @@ const Products = (): JSX.Element => {
 
       <div className="section-content">
         <div className="products-container">
-          <div className="row">
+          <div className="row gx-5">
             <div className="col-4">
-              <ProductsCard />
+              <article className="box-products">
+                <div className="box-products__header">
+                  <p>In Need</p>
+                </div>
+                {productsData.need.map((item, index) => (
+                  <ProductsCard {...item} key={index} />
+                ))}
+              </article>
+            </div>
+            <div className="col-4">
+              <article className="box-products">
+                <div className="box-products__header">
+                  <p>Industry</p>
+                </div>
+                {productsData.industry.map((item, index) => (
+                  <ProductsCard {...item} key={index} />
+                ))}
+              </article>
+            </div>
+            <div className="col-4">
+              <article className="box-products">
+                <div className="box-products__header">
+                  <p>Industry</p>
+                </div>
+                {productsData.solution.map((item, index) => (
+                  <ProductsCard {...item} key={index} />
+                ))}
+              </article>
             </div>
           </div>
         </div>

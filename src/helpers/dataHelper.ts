@@ -21,12 +21,23 @@ interface IchoiceData {
 interface IclientData {
   line1: Iline[];
   line2: Iline[];
-  line3: Iline[]
+  line3: Iline[];
 }
 
 interface Iline {
   img_src: string;
   class?: string;
+}
+
+interface Iproducts {
+  need: IproductItem[];
+  industry: IproductItem[];
+  solution: IproductItem[];
+}
+
+interface IproductItem {
+  img: string;
+  title: string;
 }
 
 export default function dataHelper() {
@@ -96,5 +107,55 @@ export default function dataHelper() {
     ],
   };
 
-  return { menuItemData, featureData, choiceData, clienData };
+  const productsData: Iproducts = {
+    need: [
+      {
+        img: "/assets/products-icon1.png",
+        title: "Sales",
+      },
+      {
+        img: "/assets/products-icon2.png",
+        title: "Marketing",
+      },
+      {
+        img: "/assets/products-icon3.png",
+        title: "Sales",
+      },
+    ],
+
+    industry: [
+      {
+        img: "/assets/products-icon4.png",
+        title: "Automotive",
+      },
+      {
+        img: "/assets/products-icon5.png",
+        title: "Real estate",
+      },
+      {
+        img: "/assets/products-icon6.png",
+        title: "Education",
+      },
+    ],
+    solution: [
+      {
+        img: "/assets/products-icon7.png",
+        title: "Project Management",
+      },
+      {
+        img: "/assets/products-icon8.png",
+        title: "Delivery Management",
+      },
+      {
+        img: "/assets/products-icon9.png",
+        title: "Loyalty Management",
+      },
+      {
+        img: "/assets/products-icon10.png",
+        title: "Professional Management",
+      },
+    ],
+  };
+
+  return { menuItemData, featureData, choiceData, clienData, productsData };
 }
