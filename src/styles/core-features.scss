@@ -79,11 +79,19 @@
                 margin-top: -5px;
             }
 
+            @include screen(medium){
+                margin-top: -5.7px;
+            }
+
             .item {
                 margin-top: 3rem;
 
                 @include screen(small) {
                      margin-top: 1.5rem;
+                }
+
+                @include screen(medium){
+                    margin-top: 1.9rem;
                 }
 
                 .subtitle {

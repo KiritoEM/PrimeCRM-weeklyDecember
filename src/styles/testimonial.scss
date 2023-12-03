@@ -46,6 +46,10 @@
                 margin-top: -7rem;
             }
 
+            @include screen(medium){
+                margin-top: -10rem;
+            }
+
             .btn-left {
                 width: 15%;
                 display: flex;
@@ -56,11 +60,19 @@
                     width: 6%;
                 }
 
+                @include screen(medium){
+                    width: 9%;
+                }
+
                 img {
                     width: 100px;
 
                     @include screen(small) {
                        width: 80px;
+                    }
+
+                    @include screen(medium){
+                         width: 90px;
                     }
                 }
             }
@@ -75,11 +87,19 @@
                     width: 6%;
                 }
 
+                @include screen(medium){
+                    width: 9%;
+                }
+
                 img {
                     width: 100px;
 
                     @include screen(small) {
                         width: 80px;
+                    }
+
+                    @include screen(medium){
+                        width: 90px;
                     }
                 }
             }
@@ -96,6 +116,10 @@
                     width: 88%;
                 }
 
+                @include screen(medium){
+                    width: 82%;
+                }
+
                 .profile {
                     img {
                         width: 210px;
@@ -103,6 +127,10 @@
 
                         @include screen(small) {
                             width: 137px;
+                        }
+
+                        @include screen(medium){
+                             width: 170px;
                         }
                     }
                 }

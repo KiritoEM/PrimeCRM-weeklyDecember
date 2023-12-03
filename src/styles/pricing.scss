@@ -12,6 +12,11 @@
         padding-right: 0;
     }
 
+    @include screen(medium){
+         padding-left: 0;
+         padding-right: 0;
+    }
+
     .section-header {
         text-align: center;
 
@@ -33,6 +38,10 @@
             width: 60%;
 
             @include screen(small) {
+                 width: 100%;
+            }
+
+            @include screen(medium){
                  width: 100%;
             }
         }
@@ -58,6 +67,11 @@
                     height: 15rem;
                     object-fit: cover;
                 }
+
+                @include screen(medium){
+                    height: 20rem;
+                    object-fit: cover;
+                }
             }
         }
 
@@ -74,6 +88,12 @@
                 padding-right: 0;
                 margin-top: -14.6rem;
                 @include container;
+            }
+
+            @include screen(medium){
+                margin-top: -16rem;
+                padding-left: 30px;
+                padding-right: 30px;
             }
 
             .box-pricing {
