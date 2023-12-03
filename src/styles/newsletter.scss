@@ -5,10 +5,14 @@
     @include container;
 
     @include screen(small) {
-       height: max-content;
-       padding-left: 0;
-       padding-right: 0;
-      }
+        height: max-content;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include screen(medium) {
+        height: 28rem;       
+    }
 
     .bg {
         width: 100%;
@@ -26,6 +30,11 @@
             border-radius: 0;
         }
 
+        @include screen(medium) {
+            padding: 42px;   
+            padding-top: 87px;
+        }
+
         .section-header {
             width: 100%;
             display: flex;
@@ -35,6 +44,10 @@
 
             @include screen(small) {
                 flex-direction: column;
+            }
+
+            @include screen(medium) {
+                gap: 37px;
             }
 
             @include screen(small) {
@@ -84,7 +97,11 @@
                     gap: 10px;
 
                     @include screen(small) {
-                        gap: 57x;
+                        gap: 7px;
+                    }
+
+                    @include screen(medium) {
+                        gap: 10px;
                     }
 
                     .input {
@@ -92,6 +109,10 @@
 
                         @include screen(small) {
                             width: 55%;
+                        }
+
+                        @include screen(medium) {
+                            width: 60%;
                         }
 
                         input {
@@ -104,6 +125,10 @@
                             @include screen(small) {
                                 padding: 12px;
                             }
+
+                            @include screen(medium) {
+                                padding: 13px;
+                            }
                         }
                     }
 
@@ -112,6 +137,10 @@
 
                         @include screen(small) {
                             width: 40%;
+                        }
+
+                        @include screen(medium) {
+                            width: 35%;
                         }
 
                         .btn {
@@ -127,6 +156,10 @@
                             @include screen(small) {
                                 padding: 12px;
                             }
+
+                            @include screen(medium) {
+                                padding: 13px;
+                            }
                         }
                     }
 
@@ -140,13 +173,21 @@
             margin-top: 3rem;
 
             @include screen(small) {
-              display: none;  
+                display: none;
+            }
+
+            @include screen(medium) {
+                margin-top: -5.4rem;
             }
 
             img {
                 width: 100%;
                 height: 30rem;
                 object-fit: contain;
+
+                @include screen(medium) {
+                    height: 35rem;
+                }
             }
         }
     }
