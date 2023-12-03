@@ -9,6 +9,7 @@ interface IfeatureData {
   img: string;
   title: string;
   text: string;
+  id?: string
 }
 
 interface IchoiceData {
@@ -98,6 +99,7 @@ export default function dataHelper() {
       img: "/assets/feature2.png",
       title: "User Friendly",
       text: "Use Timeline to plan projects right how the pieces fit together.",
+      id:"box-2"
     },
     {
       bg: "#F4F4F4",

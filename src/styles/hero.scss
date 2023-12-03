@@ -22,7 +22,7 @@
 
     .section-cover {
         width: 100%;
-        height: 110vh;
+        height: 105vh;
         z-index: 5;
         padding-left: 8%;
         background-size: cover;
@@ -34,6 +34,10 @@
 
         @include screen(medium) {
             height: 100vh;
+        }
+
+        @include screen-x(1022px, 1110px) {
+          height: 100vh;
         }
 
 
@@ -111,9 +115,12 @@
                     font-size: 27px;
                 }
 
-
                 @include screen-x(310px, 340px) {
                     font-size: 24px;
+                }
+
+                @include screen-x(1022px, 1110px) {
+                    font-size: 28px;
                 }
             }
         }
@@ -159,6 +166,10 @@
             width: 100%;
             height: 1.4px;
             background-color: #DEDEDE;
+
+            @include screen(medium) {
+                width: 55%;
+            }
         }
 
         .FiveStar {
@@ -259,6 +270,11 @@
         @include screen(small) {
            left: 15rem;
         }
+
+        @include screen(medium) {
+            left: 20rem;
+            top: 9rem;
+        }
     }
 
     #p3 {
@@ -270,6 +286,10 @@
 
         @include screen(small) {
             left: 20rem;
+        }
+
+        @include screen(medium) {
+            top: 35rem;
         }
     }
 
@@ -283,6 +303,10 @@
         @include screen(small) {
            left: 15rem;
         }
+
+        @include screen(medium) {
+            left: 15rem;
+        }
     }
 
     #p4 {
@@ -294,6 +318,10 @@
          
         @include screen(small) {
            left: 25rem;
+        }
+
+        @include screen(medium) {
+            left: 20rem;
         }
     }
 

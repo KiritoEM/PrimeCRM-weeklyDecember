@@ -5,6 +5,7 @@ interface Iprops {
   img: string;
   title: string;
   text: string;
+  id?: string
 }
 
 const FeatureCard: React.FC<Iprops> = ({
@@ -12,9 +13,10 @@ const FeatureCard: React.FC<Iprops> = ({
   img,
   title,
   text,
+  id
 }): JSX.Element => {
   return (
-    <article className="box-feature" style={{backgroundColor: `${bg}`}}>
+    <article className="box-feature" style={{backgroundColor: `${bg}`}} id={id}>
       <div className="box-feature__img">
          <img src={img} alt="" />
       </div>
