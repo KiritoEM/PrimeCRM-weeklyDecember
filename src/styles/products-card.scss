@@ -1,0 +1,56 @@
+.box-products {
+    width: 100%;
+    height: 100%;
+
+    &__header {
+        width: 120px;
+
+        p {
+            padding-left: 32px;
+            padding-top: 9px;
+            text-align: center;
+            padding-bottom: 9px;
+            border-radius: 5px;
+            padding-right: 32px;
+            background-color: $color-primary03;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        gap: 20px;
+
+        .img {
+            height: max-content;
+            margin: auto;
+
+            img {
+                width: 43px;
+            }
+        }
+
+        .text {
+            width: 100%;
+            height: max-content;
+
+            p {
+                color: $color-secondary01;
+                font-family: $font-openSans;
+                padding: 0;
+                font-size: 15px;
+                margin: 0;
+            }
+
+            h5 {
+                color: $color-primary03;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+    }
+}

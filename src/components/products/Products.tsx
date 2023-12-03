@@ -1,3 +1,5 @@
+import ProductsCard from "../childrenComponents/ProductsCard";
+
 const Products = (): JSX.Element => {
   return (
     <section id="products">
@@ -8,6 +10,16 @@ const Products = (): JSX.Element => {
           brought to you by a company with the long term vision to transform the
           way you work.
         </p>
+      </div>
+
+      <div className="section-content">
+        <div className="products-container">
+          <div className="row">
+            <div className="col-4">
+              <ProductsCard />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
