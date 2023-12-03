@@ -23,6 +23,12 @@
         margin-top: 2.6rem;
     }
 
+    @include screen(medium) {
+        height: max-content;
+        background-size: 27% 20rem;
+        margin-top: -2.6rem;
+    }
+
     .section-cover {
         width: 100%;
         height: 100%;

@@ -8,6 +8,10 @@
             margin-top: 2.5rem;
         }
 
+        @include screen(medium) {
+          margin-top: -6.4rem;   
+        }
+
         .section-header {
             text-align: center;
 

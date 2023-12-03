@@ -39,7 +39,7 @@ const Hero = (): JSX.Element => {
     <Fragment>
       <section id="hero">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <div className="section-header">
               <div className="title">
                 <h1>The CRM Platform Your Whole Business Will Love</h1>
@@ -80,7 +80,7 @@ const Hero = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="col-8 d-none d-md-flex">
+          <div className="col-md-6 col-lg-8 d-none d-lg-flex">
             <div className="section-cover">
               <div className="img-container">
                 <div className="section-1">

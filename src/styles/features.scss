@@ -1,11 +1,15 @@
-#features{
+#features {
     width: 100%;
     overflow: hidden;
     padding-top: 3rem;
     padding-bottom: 3rem;
     @include container;
 
-     .section-header{
+    @include screen(medium) {
+        padding-top: 0;
+    }
+
+    .section-header {
         text-align: center;
 
         h3 {
@@ -13,7 +17,7 @@
             font-weight: 600;
         }
 
-        p{
+        p {
             margin-top: 0.9rem;
             color: $color-secondary01;
             font-size: 17px;
@@ -23,11 +27,15 @@
 
             @include screen(small) {
                 width: 100%;
-              }
-        }
-     }
+            }
 
-     .section-content{
+            @include screen(medium) {
+                width: 80%;
+            }
+        }
+    }
+
+    .section-content {
         width: 100%;
-     }
+    }
 }
