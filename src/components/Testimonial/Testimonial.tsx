@@ -1,4 +1,7 @@
+import dataHelper from "../../helpers/dataHelper";
+
 const Testimonial = (): JSX.Element => {
+  const { statisticsData } = dataHelper();
   return (
     <section id="testimonial">
       <div id="testimonial__container">
@@ -25,13 +28,31 @@ const Testimonial = (): JSX.Element => {
             <div className="content">
               <p>
                 “ PrimeCRM Is The Most Intuitive And Modern Live Chat We Found.
-                Live Chat Obviously Made <b>Our Users Happier</b> And Our Service
-                Department More Efficient
+                Live Chat Obviously Made <b>Our Users Happier</b> And Our
+                Service Department More Efficient
               </p>
             </div>
           </div>
           <div className="btn-right">
             <img src="/assets/Right.png" alt="" />
+          </div>
+        </div>
+        <div className="line"></div>
+        <div className="statistics">
+          <div className="row">
+            {statisticsData.map((item, index) => (
+              <div className="col-3" key={index} id="container">
+                <div className="stat">
+                  <h3
+                    dangerouslySetInnerHTML={{ __html: item.stat }}
+                    id={item.id}
+                  />
+                </div>
+                <div className="label">
+                  <p>{item.label}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

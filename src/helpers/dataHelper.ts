@@ -56,6 +56,12 @@ interface IiconesMobile {
   icons: string;
 }
 
+interface Istatistic {
+  stat: string;
+  label: string;
+  id?:string;
+}
+
 export default function dataHelper() {
   const menuItemData: ImenuItem[] = [
     { label: "Solution", url: "/" },
@@ -200,6 +206,13 @@ export default function dataHelper() {
     ],
   };
 
+  const statisticsData: Istatistic[] = [
+    { label: "User Rating", stat: "4.9<span>/</span>5" , id:"elt-1"},
+    { label: "Customers", stat: "350<span>K</span>+" , id:"elt-2"},
+    { label: "Team Members  ", stat: "99<span>+</span>" , id:"elt-3"},
+    { label: "Current Users", stat: "41<span>M</span>" , id:"elt-4"},
+  ];
+
   return {
     menuItemData,
     featureData,
@@ -207,5 +220,6 @@ export default function dataHelper() {
     clienData,
     productsData,
     functioningData,
+    statisticsData,
   };
 }
