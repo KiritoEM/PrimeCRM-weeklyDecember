@@ -20,6 +20,10 @@
             font-family: $font-openSans;
             margin: auto;
             width: 60%;
+
+            @include screen(small) {
+                width: 100%;
+              }
         }
      }
 

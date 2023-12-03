@@ -17,7 +17,7 @@ const Features = (): JSX.Element => {
       <div className="section-content mt-5">
         <div className="row gx-5">
           {featureData.map((item, index) => (
-            <div className="col-4" key={index}>
+            <div className="col-md-4" key={index}>
               <FeatureCard {...item} />
             </div>
           ))}

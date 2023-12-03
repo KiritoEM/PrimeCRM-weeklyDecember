@@ -16,13 +16,13 @@ const CoreFeatures = (): JSX.Element => {
   ];
   return (
     <section id="core-features">
-      <div className="row gx-5">
-        <div className="col-6">
+      <div className="row gx-1 gx-md-5  gy-5 gy-md-2">
+        <div className="col-md-6">
           <div className="section-cover">
             <img src="/assets/Corefeature.png" alt="" />
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <div className="section-content">
             <div className="header">
               <h3>Allocate Leads and Simplify Lead Management</h3>
