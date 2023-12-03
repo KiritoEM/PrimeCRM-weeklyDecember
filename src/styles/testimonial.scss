@@ -1,0 +1,29 @@
+#testimonial {
+    width: 100%;
+    height: max-content;
+    background: $color-primary03;
+    margin-top: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @include container;
+
+    &__container {
+        width: 100%;
+        height: 100%;
+
+         .pattern{
+             width: 100%;
+             height: 100%;
+             display: flex;
+             justify-content: center;
+             position: relative;
+             top: -30px;
+
+            img{
+                width: 90%;
+                height: 100%;
+                object-fit: contain;
+            }
+         }
+    }
+}

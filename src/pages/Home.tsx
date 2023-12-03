@@ -6,6 +6,7 @@ import Clients from "../components/clients/Clients";
 import NewsLetter from "../components/newsLetter/NewsLetter";
 import Products from "../components/products/Products";
 import Functioning from "../components/functioning/Functioning";
+import Testimonial from "../components/Testimonial/Testimonial";
 
 const Home = (): JSX.Element => {
   return (
@@ -18,6 +19,7 @@ const Home = (): JSX.Element => {
       <NewsLetter />
       <Products />
       <Functioning />
+      <Testimonial />
     </section>
   );
 };
