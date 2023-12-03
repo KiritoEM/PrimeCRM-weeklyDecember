@@ -19,8 +19,8 @@ const Pricing = (): JSX.Element => {
           <img src="/assets/pricing-bg.png" alt="" />
         </div>
         <div className="pricing-container">
-          <div className="row gx-5">
-            <div className="col-6">
+          <div className="row gx-5 gy-5 gy-md-2">
+            <div className="col-md-6">
               <div className="box-pricing">
                 <div className="title">
                   <h5>
@@ -50,7 +50,7 @@ const Pricing = (): JSX.Element => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-md-6">
               <div className="box-pricing">
                 <div className="title">
                   <h5>

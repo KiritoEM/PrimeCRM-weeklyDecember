@@ -39,9 +39,9 @@ const Testimonial = (): JSX.Element => {
         </div>
         <div className="line"></div>
         <div className="statistics">
-          <div className="row">
+          <div className="row gy-4 gy-2">
             {statisticsData.map((item, index) => (
-              <div className="col-3" key={index} id="container">
+              <div className="col-6 col-md-3" key={index} id="container">
                 <div className="stat">
                   <h3
                     dangerouslySetInnerHTML={{ __html: item.stat }}

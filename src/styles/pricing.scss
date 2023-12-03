@@ -6,6 +6,12 @@
     padding-bottom: 3rem;
     @include container;
 
+    @include screen(small) {
+        margin-top: 4.4rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .section-header {
         text-align: center;
 
@@ -21,6 +27,10 @@
             font-family: $font-openSans;
             margin: auto;
             width: 60%;
+
+            @include screen(small) {
+                 width: 100%;
+            }
         }
     }
 
@@ -31,10 +41,19 @@
             width: 100%;
             height: 100%;
 
+            @include screen(small) {
+                border-radius: 20px;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+
+                @include screen(small) {
+                    height: 15rem;
+                    object-fit: cover;
+                }
             }
         }
 
@@ -45,6 +64,13 @@
             padding-left: 76px;
             padding-right: 76px;
             margin-top: -21rem;
+
+            @include screen(small) {
+                padding-left: 0;
+                padding-right: 0;
+                margin-top: -14.6rem;
+                @include container;
+            }
 
             .box-pricing {
                 width: 100%;
@@ -71,6 +97,13 @@
                     background-color: #fff;
                     box-shadow: 0 8px 22px rgb(224, 224, 224);
                     border-radius: 25px;
+
+                    @include screen(small) {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                    }
 
                     &__header {
                         h2 {

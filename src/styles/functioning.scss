@@ -6,7 +6,8 @@
         padding-left: 11%;
 
         @include screen(small) {
-          @include container;       
+          @include container;      
+          padding-top: 1.6rem; 
         }
 
         .section-header {
@@ -127,7 +128,7 @@
                         width: 150px;
 
                         @include screen(small) {
-                            width: 98px;
+                            width: 100px;
                         }
                      }
                 }
