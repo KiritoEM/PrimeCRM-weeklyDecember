@@ -48,7 +48,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        z-index: 50;
+        z-index: 500;
         justify-content: center;
 
         @include screen(small) {
@@ -192,9 +192,19 @@
     width: 100%;
     position: absolute;
     top: 0;
+    z-index: 5;
     overflow: hidden;
     height: 100%;
 
+    @include screen(small) {
+        display: none;
+    }
+
+    @include screen(medium) {
+        display: none;
+    }
+
+    
     img {
         width: 28px;
 
@@ -218,8 +228,8 @@
     #p7 {
         position: absolute;
         z-index: 10;
-        top: 12rem;
-        left: 33rem;
+        top: 6rem;
+        left: 4rem;
          
         @include screen(small) {
            left: 15rem;
@@ -250,8 +260,8 @@
     #p2 {
         position: absolute;
         z-index: 10;
-        top: 25rem;
-        left: 38rem;
+        top: 20rem;
+        left: 45rem;
         transform: rotate(-45deg);
 
         @include screen(small) {
@@ -282,8 +292,8 @@
     #p1 {
         position: absolute;
         z-index: 10;
-        top: 15rem;
-        right: 8rem;
+        top: 20rem;
+        right: 5rem;
         transform: rotate(-45deg);
          
         @include screen(small) {
