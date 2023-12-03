@@ -1,0 +1,27 @@
+#products {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 19rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    @include container;
+
+    .section-header {
+        text-align: center;
+
+        h3 {
+            color: $color-primary03;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 0.9rem;
+            color: $color-secondary01;
+            font-size: 17px;
+            font-family: $font-openSans;
+            margin: auto;
+            width: 60%;
+        }
+    }
+
+}

@@ -4,6 +4,7 @@ import CoreFeatures from "../components/coreFeatures/CoreFeatures";
 import Choice from "../components/Choice/Choice";
 import Clients from "../components/clients/Clients";
 import NewsLetter from "../components/newsLetter/NewsLetter";
+import Products from "../components/products/Products";
 
 const Home = (): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const Home = (): JSX.Element => {
       <Choice />
       <Clients />
       <NewsLetter />
+      <Products />
     </section>
   );
 };
