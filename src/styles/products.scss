@@ -1,10 +1,15 @@
 #products {
     width: 100%;
     overflow: hidden;
-    margin-top: 10.6rem;
+    margin-top: 10rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     @include container;
+    
+
+    @include screen(small) {
+        margin-top: 1.2rem;           
+    }
 
     .section-header {
         text-align: center;
@@ -21,6 +26,10 @@
             font-family: $font-openSans;
             margin: auto;
             width: 60%;
+            
+            @include screen(small) {
+                width: 100%;   
+            }
         }
     }
 

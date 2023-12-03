@@ -1,8 +1,12 @@
     #clients {
         width: 100%;
         overflow: hidden;
-        padding-bottom: 3.6rem; 
+        padding-bottom: 3.6rem;
         @include container;
+
+        @include screen(small) {
+            margin-top: 2.5rem;
+        }
 
         .section-header {
             text-align: center;
@@ -19,6 +23,10 @@
                 font-family: $font-openSans;
                 margin: auto;
                 width: 60%;
+
+                @include screen(small) {
+                    width: 100%;
+                }
             }
         }
 
@@ -43,14 +51,34 @@
                     padding-top: 35px;
                     padding-bottom: 35px;
 
+                    @include screen(small) {
+                        width: 95px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+
+
+                    @include screen-x(300px, 33 0px) {
+                        padding-left: 22px;
+                        padding-right: 2px;
+                    }
+
                     img {
                         width: 115px;
                         text-align: center;
+
+                        @include screen(small) {
+                            width: 72px;
+                        }
+
+                        @include screen-x(300px, 33 0px) {
+                           width: 65px;
+                        }
                     }
                 }
 
                 .img-last {
-                    border-right: 0;
+                    border-right: 0
                 }
             }
 
@@ -58,11 +86,12 @@
                 width: 100%;
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
                 height: 100%;
 
                 .logo {
-                    width: 215px;
-                    height: 6rem;
+                    width: 211px;
+                    height: 5.6rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -71,14 +100,43 @@
                     padding-top: 35px;
                     padding-bottom: 35px;
 
+                    @include screen(small) {
+                        width: 95px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+
+                    @include screen-x(300px, 33 0px) {
+                        width: 65px;
+                     }
+
                     img {
                         width: 115px;
                         text-align: center;
+
+                        @include screen(small) {
+                            width: 72px;
+                        }
+
+                        @include screen-x(300px, 33 0px) {
+                            width: 65px;
+                         }
                     }
                 }
 
                 .img-last {
                     border-right: 0;
+
+                    @include screen(small) {
+                        display: none;
+                        border: 0;
+                    }
+                }
+
+                .img-4 {
+                    @include screen(small) {
+                        border-right: 0;
+                    }
                 }
             }
 
@@ -95,18 +153,36 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    border-bottom: 1px solid #C5C5C5;
                     border-right: 1px solid #C5C5C5;
                     padding-top: 35px;
                     padding-bottom: 35px;
 
+                    @include screen(small) {
+                        width: 95px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                    @include screen-x(300px, 33 0px) {
+                        width: 65px;
+                     }
+
                     img {
                         width: 115px;
                         text-align: center;
+
+                        @include screen(small) {
+                            width: 72px;
+                        }
+
+                        @include screen-x(300px, 33 0px) {
+                            width: 65px;
+                         }
                     }
                 }
 
                 .img-last {
-                    border-right: 0;
+                    border-right: 0
                 }
             }
         }

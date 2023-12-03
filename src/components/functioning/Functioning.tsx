@@ -4,8 +4,8 @@ const Functioning = (): JSX.Element => {
   const { functioningData } = dataHelper();
   return (
     <section id="functioning">
-      <div className="row">
-        <div className="col-5">
+      <div className="row gy-5 gy-md-2">
+        <div className="col-md-5">
           <div className="section-header">
             <div className="title">
               <h3>How It Works</h3>
@@ -34,7 +34,7 @@ const Functioning = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="col-7">
+        <div className="col-md-7">
           <div className="section-appmobile">
             <div className="text">
               <h3>

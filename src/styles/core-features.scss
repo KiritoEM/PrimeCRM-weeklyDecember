@@ -49,6 +49,10 @@
                 font-size: 17px;
                 font-family: $font-openSans;
                 width: 95%;
+
+                @include screen(small) {
+                     width: 100%;
+                }
             }
         }
 

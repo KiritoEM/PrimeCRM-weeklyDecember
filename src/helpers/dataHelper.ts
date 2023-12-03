@@ -132,7 +132,7 @@ export default function dataHelper() {
       { img_src: "/assets/client5.svg", class: "img-first" },
       { img_src: "/assets/client6.png" },
       { img_src: "/assets/client7.png" },
-      { img_src: "/assets/client8.png" },
+      { img_src: "/assets/client8.png" , class:"img-4"},
       { img_src: "/assets/client9.png", class: "img-last" },
     ],
     line3: [

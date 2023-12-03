@@ -16,8 +16,8 @@ const Products = (): JSX.Element => {
 
       <div className="section-content">
         <div className="products-container">
-          <div className="row gx-5">
-            <div className="col-4">
+          <div className="row gx-5 gy-5 gy-md-2">
+            <div className="col-md-4">
               <article className="box-products">
                 <div className="box-products__header">
                   <p>In Need</p>
@@ -27,7 +27,7 @@ const Products = (): JSX.Element => {
                 ))}
               </article>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <article className="box-products">
                 <div className="box-products__header">
                   <p>Industry</p>
@@ -37,7 +37,7 @@ const Products = (): JSX.Element => {
                 ))}
               </article>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <article className="box-products">
                 <div className="box-products__header">
                   <p>Solution</p>

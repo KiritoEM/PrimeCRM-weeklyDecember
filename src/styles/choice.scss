@@ -16,6 +16,13 @@
     background-position: right;
     @include container;
 
+    @include screen(small) {
+        height: max-content;
+        background-size: 60% 24rem;
+        background-position: right top;
+        margin-top: 2.6rem;
+    }
+
     .section-cover {
         width: 100%;
         height: 100%;
@@ -35,6 +42,10 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 10px;
+
+        @include screen(small) {
+            margin-top: -14px;
+        }
 
         .header {
             width: 89%;

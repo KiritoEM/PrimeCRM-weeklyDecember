@@ -4,8 +4,8 @@ const Choice = (): JSX.Element => {
   const { choiceData } = dataHelper();
   return (
     <section id="choice">
-      <div className="row gx-5">
-        <div className="col-6">
+      <div className="row gx-1 gx-md-5  gy-5 gy-md-2">
+        <div className="col-md-6">
           <div className="section-content">
             <div className="header">
               <h3>Ways a project management tool can help your team</h3>
@@ -39,7 +39,7 @@ const Choice = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <div className="section-cover">
             <img src="/assets/img-choice.png" alt="" />
           </div>
