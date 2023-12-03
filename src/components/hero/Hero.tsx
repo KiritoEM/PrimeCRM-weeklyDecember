@@ -94,7 +94,7 @@ const Hero = (): JSX.Element => {
           <Fade right>
             <div className="col-md-6 col-lg-8 d-none d-lg-flex">
               <div className="section-cover">
-                <div className="img-container">
+                {/* <div className="img-container">
                   <div className="section-1">
                     <img src="/assets/hero1.png" alt="" />
                     <img src="/assets/hero2.png" alt="" id="hero2" />
@@ -107,7 +107,7 @@ const Hero = (): JSX.Element => {
                   <div className="section-3">
                     <img src="/assets/hero5.png" alt="" />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </Fade>
