@@ -7,6 +7,10 @@
     overflow: hidden;
     @include container;
 
+    @include screen(small) {
+        padding-bottom: 4rem;
+    }
+
     .col-3{
         margin-bottom: 0;
     }
@@ -17,6 +21,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        @include screen(small) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
 
         .logo {
             img {
@@ -164,6 +174,10 @@
                 height: 100%;
                 background-image: url(../../public/assets/footer-blog.png);
                 background-size: cover;
+
+                @include screen(small) {
+                    height: 8rem;
+                }
 
                  .button{
                     width: 100%;

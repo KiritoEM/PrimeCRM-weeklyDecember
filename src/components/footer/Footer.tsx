@@ -18,8 +18,8 @@ const Footer = (): JSX.Element => {
         </div>
       </div>
       <div className="navigation">
-        <div className="row gx-0" id="navigation-container">
-          <div className="col-3">
+        <div className="row gx-0 gy-5 gy-md-2" id="navigation-container">
+          <div className="col-md-3">
             <div className="links">
               <div className="title">
                 <h5>Usefull Link</h5>
@@ -33,7 +33,7 @@ const Footer = (): JSX.Element => {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <div className="services">
               <div className="title">
                 <h5>Service</h5>
@@ -47,7 +47,7 @@ const Footer = (): JSX.Element => {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <div className="contact">
               <div className="title">
                 <h5>Contact Us</h5>
@@ -66,7 +66,7 @@ const Footer = (): JSX.Element => {
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3">
             <div className="blog">
               <div className="title">
                 <h5>Our Latest News</h5>
