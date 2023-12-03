@@ -1,4 +1,7 @@
+import dataHelper from "../../helpers/dataHelper";
+
 const Functioning = (): JSX.Element => {
+  const { functioningData } = dataHelper();
   return (
     <section id="functioning">
       <div className="row">
@@ -12,7 +15,23 @@ const Functioning = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="points"></div>
+            <div className="points">
+              {functioningData.headerPoints.map((item, index) => (
+                <div className="item" key={index}>
+                  <div className="img">
+                    <img src={item.img} alt="" className="mx-3" />
+                  </div>
+                  <div className="text">
+                    <div className="subtitle">
+                      <h5>{item.title}</h5>
+                    </div>
+                    <div className="text">
+                      <p>{item.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="col-7"></div>

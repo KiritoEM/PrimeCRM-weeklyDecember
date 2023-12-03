@@ -41,6 +41,21 @@ interface IproductItem {
   id?: string;
 }
 
+interface Ifunctioning {
+  headerPoints: IfunctioningPoints[];
+  mobileIcons: IiconesMobile[];
+}
+
+interface IfunctioningPoints {
+  img: string;
+  title: string;
+  text: string;
+}
+
+interface IiconesMobile {
+  icons: string;
+}
+
 export default function dataHelper() {
   const menuItemData: ImenuItem[] = [
     { label: "Solution", url: "/" },
@@ -161,5 +176,26 @@ export default function dataHelper() {
     ],
   };
 
-  return { menuItemData, featureData, choiceData, clienData, productsData };
+  const functioningData: Ifunctioning = {
+    headerPoints: [
+      {
+        img: "/assets/01.png",
+        text: "CentraHub CRM automatically logs in any reactions made by your leads, prospects",
+        title: "Download Our App",
+      },
+      {
+        img: "/assets/02.png",
+        text: "Customers making it easier for your sales team members audience they make contact.",
+        title: "List Your Company Detail",
+      },
+      {
+        img: "/assets/03.png",
+        text: "customers, making it easier for your sales team members audience before make contact.",
+        title: "Enjoy Your Business",
+      },
+    ],
+    mobileIcons: [],
+  };
+
+  return { menuItemData, featureData, choiceData, clienData, productsData , functioningData };
 }
