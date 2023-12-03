@@ -38,6 +38,7 @@ interface Iproducts {
 interface IproductItem {
   img: string;
   title: string;
+  id?: string;
 }
 
 export default function dataHelper() {
@@ -119,7 +120,8 @@ export default function dataHelper() {
       },
       {
         img: "/assets/products-icon3.png",
-        title: "Sales",
+        title: "Services",
+        id: "last",
       },
     ],
 
@@ -135,6 +137,7 @@ export default function dataHelper() {
       {
         img: "/assets/products-icon6.png",
         title: "Education",
+        id: "last",
       },
     ],
     solution: [
@@ -153,6 +156,7 @@ export default function dataHelper() {
       {
         img: "/assets/products-icon10.png",
         title: "Professional Management",
+        id: "last",
       },
     ],
   };

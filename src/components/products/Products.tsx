@@ -40,7 +40,7 @@ const Products = (): JSX.Element => {
             <div className="col-4">
               <article className="box-products">
                 <div className="box-products__header">
-                  <p>Industry</p>
+                  <p>Solution</p>
                 </div>
                 {productsData.solution.map((item, index) => (
                   <ProductsCard {...item} key={index} />
