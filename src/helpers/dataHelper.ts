@@ -62,6 +62,20 @@ interface Istatistic {
   id?: string;
 }
 
+interface Ifooter{
+   socialIcons: IfooterIcon[];
+   link: IfooterText[];
+   services: IfooterText[]
+}
+
+interface IfooterIcon{
+  icon: string
+}
+
+interface IfooterText{
+  text: string
+}
+
 export default function dataHelper() {
   const menuItemData: ImenuItem[] = [
     { label: "Solution", url: "/" },
@@ -238,6 +252,18 @@ export default function dataHelper() {
     ],
   };
 
+  const footerData : Ifooter= {
+    socialIcons:[
+       {icon:"/assets/Instagram.png"},
+       {icon:"/assets/Facebook.png"},
+       {icon:"/assets/Twiter.png"},
+       {icon:"/assets/Linkedin.png"},
+       {icon:"/assets/Youtube.png"},
+    ],
+    link:[],
+    services:[],
+  }
+
   return {
     menuItemData,
     featureData,
@@ -247,5 +273,6 @@ export default function dataHelper() {
     functioningData,
     statisticsData,
     pricingData,
+    footerData
   };
 }
