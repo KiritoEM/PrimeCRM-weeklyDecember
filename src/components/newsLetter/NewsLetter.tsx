@@ -21,7 +21,9 @@ const NewsLetter = () => {
             </div>
           </div>
         </div>
-        <div className="section-img"></div>
+        <div className="section-img">
+            <img src="/assets/img-newsletter.png" alt="" />
+        </div>
       </div>
     </section>
   );
