@@ -31,9 +31,9 @@ const Pricing = (): JSX.Element => {
                     </p>
                   </div>
                   <div className="line"></div>
-                  <div className="points">
+                  <div className="points mt-4">
                       <div className="item">
-                         <p><img src="/assets/icon.png" alt="" /></p>
+                         <p><img src="/assets/icon.png" alt="" /><span className="mx-3">Outbound email and in-product</span></p>
                       </div>
                   </div>
                 </div>

@@ -59,7 +59,7 @@ interface IiconesMobile {
 interface Istatistic {
   stat: string;
   label: string;
-  id?:string;
+  id?: string;
 }
 
 export default function dataHelper() {
@@ -207,11 +207,36 @@ export default function dataHelper() {
   };
 
   const statisticsData: Istatistic[] = [
-    { label: "User Rating", stat: "4.9<span>/</span>5" , id:"elt-1"},
-    { label: "Customers", stat: "350<span>K</span>+" , id:"elt-2"},
-    { label: "Team Members  ", stat: "99<span>+</span>" , id:"elt-3"},
-    { label: "Current Users", stat: "41<span>M</span>" , id:"elt-4"},
+    { label: "User Rating", stat: "4.9<span>/</span>5", id: "elt-1" },
+    { label: "Customers", stat: "350<span>K</span>+", id: "elt-2" },
+    { label: "Team Members  ", stat: "99<span>+</span>", id: "elt-3" },
+    { label: "Current Users", stat: "41<span>M</span>", id: "elt-4" },
   ];
+
+  const pricingData: any = {
+    stater: [
+      { text: "Outbound email and <b>in-product</b>" },
+      { text: "messaging" },
+      { text: "<b>Push messages</b> & notifications" },
+      { text: "Custom bots" },
+      { text: "Mobile Carousels" },
+      { text: "<b>Multi-channel</b> campaigns" },
+      { text: "A/B testing & control groups" },
+    ],
+    pro: [
+      { text: "Outbound email and <b>in-product</b>" },
+      { text: "messaging" },
+      { text: "<b>Push messages</b> & notifications" },
+      { text: "Custom bots" },
+      { text: "Mobile Carousels" },
+      { text: "<b>Multi-channel</b> campaigns" },
+      { text: "A/B testing & control groups" },
+      { text: "Website traffic analytics" },
+      { text: "Campaign reporting" },
+      { text: "<b>Custom reporting</b>" },
+      { text: "Salesforce integration" },
+    ],
+  };
 
   return {
     menuItemData,
@@ -221,5 +246,6 @@ export default function dataHelper() {
     productsData,
     functioningData,
     statisticsData,
+    pricingData,
   };
 }
