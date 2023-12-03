@@ -194,8 +194,18 @@ export default function dataHelper() {
         title: "Enjoy Your Business",
       },
     ],
-    mobileIcons: [],
+    mobileIcons: [
+      { icons: "/assets/playstore.png" },
+      { icons: "/assets/applestore.png" },
+    ],
   };
 
-  return { menuItemData, featureData, choiceData, clienData, productsData , functioningData };
+  return {
+    menuItemData,
+    featureData,
+    choiceData,
+    clienData,
+    productsData,
+    functioningData,
+  };
 }

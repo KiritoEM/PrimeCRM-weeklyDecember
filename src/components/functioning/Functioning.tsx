@@ -34,7 +34,32 @@ const Functioning = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="col-7"></div>
+        <div className="col-7">
+          <div className="section-appmobile">
+            <div className="text">
+              <h3>
+                The Perfect CRM Software: Boost Your Field Sales Team’s
+                Efficiency
+              </h3>
+              <h5>
+                Depending on the Sales Approaches Standardize a Marketing
+                Process
+              </h5>
+              <p>
+                Unique and powerful suite of software to run your entire
+                business, brought to you by a company.
+              </p>
+              <div className="icons">
+                {functioningData.mobileIcons.map((item, index) => (
+                  <img src={item.icons} alt="" key={index} />
+                ))}
+              </div>
+            </div>
+            <div className="img">
+              <img src="/assets/app-mobile.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

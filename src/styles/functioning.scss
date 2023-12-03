@@ -3,7 +3,7 @@
         overflow: hidden;
         padding-top: 3rem;
         padding-bottom: 3rem;
-        @include container;
+        padding-left: 11%;
 
         .section-header {
 
@@ -61,5 +61,63 @@
             }
         }
 
-        .section-content {}
+        .section-appmobile {
+            background: #F6F6F6;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .text {
+                height: 100%;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 60px;
+
+                h3 {
+                    color: $color-primary03;
+                    font-weight: 600;
+                }
+
+                h5 {
+                    margin-top: 10px;
+                    color: $color-primary02;
+                }
+
+                p {
+                    margin-top: 10px;
+                    color: $color-secondary01;
+                    font-size: 17px;
+                    font-family: $font-openSans;
+                }
+
+                .icons{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    margin-top: 1.5rem;
+
+                     img{
+                        width: 150px;
+                     }
+                }
+            }
+
+            .img{
+                width: 40%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                 img{
+                    width: 100%;
+                 }
+            }
+        }
     }
