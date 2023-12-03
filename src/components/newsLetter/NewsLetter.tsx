@@ -13,7 +13,7 @@ const NewsLetter = () => {
             <p>*Your Business Email Address</p>
             <div className="form">
               <div className="input">
-                <input type="text" />
+                <input type="text" placeholder="Email" />
               </div>
               <div className="button-send">
                 <button className="btn">Try Now</button>

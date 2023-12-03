@@ -18,12 +18,11 @@
         .section-header {
             width: 100%;
             display: flex;
-            gap: 65px;
-            margin: auto;
+            gap: 66px;
             padding: 0;
 
             .title {
-                width: 45%;
+                width: 50%;
 
                 h3 {
                     color: #fff;
@@ -34,12 +33,13 @@
                     margin-top: 10px;
                     color: #fff;
                     font-size: 17px;
+                    width: 86%;
                     font-family: $font-openSans;
-                    width: 95%;
                 }
             }
 
             .email {
+                width: 50%;
 
                 p {
                     color: #fff;
@@ -47,22 +47,36 @@
 
                 .form {
                     width: 100%;
-                     display: flex;
-                        flex-direction: row;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
 
-                     .input{
+                    .input {
+                        width: 60%;
 
-                        input{
+                        input {
                             width: 100%;
-                         }
-                     }
+                            border: 0;
+                            border-radius: 4px;
+                            padding: 15px;
+                            padding-left: 1.4rem;
+                        }
+                    }
 
-                     .button-send{
+                    .button-send {
+                        width: 28%;
 
-                         .btn{
+                        .btn {
                             color: #fff;
-                         }
-                     }
+                            padding: 15px;
+                            color: $color-primary03;
+                            font-weight: 600;
+                            font-size: 15px;
+                            width: 100%;
+                            border-radius:4px;
+                            background-color: #4BE3EB;
+                        }
+                    }
 
                 }
             }
