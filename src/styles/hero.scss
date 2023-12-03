@@ -3,6 +3,14 @@
     overflow: hidden;
     padding-left: 11%;
 
+    @include screen(small) {
+        margin-top: 2.8rem;
+        background-size: cover;
+        background-position: right center;
+        background-image: url("../../public/assets/Background.png");
+        @include container;
+    }
+
     .section-cover {
         width: 100%;
         height: 110vh;
@@ -14,6 +22,7 @@
         justify-content: center;
         position: relative;
         background-image: url("../../public/assets/Background.png");
+
 
         .img-container {
             width: 100%;
@@ -55,9 +64,9 @@
                 margin-left: 232px;
                 margin-top: -110px;
 
-                    img{
-                        width: 55%;
-                    }
+                img {
+                    width: 55%;
+                }
             }
         }
     }
@@ -71,11 +80,24 @@
         z-index: 50;
         justify-content: center;
 
+        @include screen(small) {
+            height: 100vh;
+        }
+
         .title {
 
             h1 {
                 font-weight: 600;
                 color: $color-primary03;
+
+                @include screen(small) {
+                    font-size: 27px;
+                }
+
+
+                @include screen-x(310px, 340px) {
+                    font-size: 24px;
+                }
             }
         }
 
@@ -91,6 +113,8 @@
 
         .buttons {
             margin-top: 0.8rem;
+            display: flex;
+            flex-wrap: nowrap;
 
             #btn-1 {
                 padding-left: 32px;
@@ -128,12 +152,20 @@
 
             .five-border {
                 width: 30px;
+
+                @include screen(small) {
+                    width: 27px;
+                }
             }
 
             .five-logo {
                 img {
                     width: 70px;
                     object-fit: cover;
+
+                    @include screen(small) {
+                       width: 61px;
+                    }
                 }
             }
 
@@ -143,6 +175,10 @@
                     font-family: $font-openSans;
                     font-weight: 700;
                     margin: 0;
+
+                    @include screen(small) {
+                       font-size: 19px;
+                     }
                 }
 
                 p {
@@ -150,10 +186,20 @@
                     margin: 0;
                     color: $color-secondary01;
                     font-weight: 400;
+
+                    @include screen(small) {
+                         font-size: 15px;
+                         margin-top: 5px;
+                      }
                 }
 
                 img {
                     width: 120px;
+
+                    @include screen(small) {
+                        width: 95px;
+                        margin-top: 3px;
+                      }
                 }
             }
         }
@@ -167,12 +213,24 @@
     overflow: hidden;
     height: 100%;
 
+    img {
+        width: 28px;
+
+        @include screen(small) {
+            width: 24px;
+        }
+
+    }
+
     #p6 {
         position: absolute;
         z-index: 10;
         top: 24rem;
         left: 2rem;
-        width: 28px;
+
+        @include screen(small) {
+            left: 1rem;
+        }
     }
 
     #p7 {
@@ -180,7 +238,10 @@
         z-index: 10;
         top: 12rem;
         left: 33rem;
-        width: 28px;
+         
+        @include screen(small) {
+           left: 15rem;
+        }
     }
 
     #p3 {
@@ -188,8 +249,11 @@
         z-index: 10;
         top: 32rem;
         left: 34rem;
-        width: 28px;
         transform: rotate(-45deg);
+
+        @include screen(small) {
+            left: 20rem;
+        }
     }
 
     #p2 {
@@ -197,8 +261,11 @@
         z-index: 10;
         top: 25rem;
         left: 38rem;
-        width: 28px;
         transform: rotate(-45deg);
+
+        @include screen(small) {
+           left: 15rem;
+        }
     }
 
     #p4 {
@@ -206,8 +273,11 @@
         z-index: 10;
         top: 25rem;
         left: 38rem;
-        width: 28px;
         transform: rotate(-45deg);
+         
+        @include screen(small) {
+           left: 25rem;
+        }
     }
 
     #p1 {
@@ -215,8 +285,11 @@
         z-index: 10;
         top: 15rem;
         right: 8rem;
-        width: 28px;
         transform: rotate(-45deg);
+         
+        @include screen(small) {
+           right: 25rem;
+        }
     }
 
 

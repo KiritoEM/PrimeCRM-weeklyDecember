@@ -13,6 +13,10 @@ interface IheroImg {
 const Hero = (): JSX.Element => {
   const polygonIcon: Ipolygon[] = [
     {
+      icon: "/assets/p1.png",
+      id: "p1",
+    },
+    {
       icon: "/assets/p2.png",
       id: "p2",
     },

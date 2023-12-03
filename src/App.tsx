@@ -1,12 +1,14 @@
-import { Fragment } from "react";
 import Home from "./pages/Home";
 import Layout from "./Layout";
+import { NavProvider } from "./hooks/useNav";
 
 const App = (): JSX.Element => {
   return (
-    <Layout>
+    <NavProvider>
+      <Layout>
         <Home />
-    </Layout>
+      </Layout>
+    </NavProvider>
   );
 };
 
