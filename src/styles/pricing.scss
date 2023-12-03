@@ -1,0 +1,101 @@
+#pricing {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5.6rem;
+    padding-bottom: 3rem;
+    padding-bottom: 3rem;
+    @include container;
+
+    .section-header {
+        text-align: center;
+
+        h3 {
+            color: $color-primary03;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 0.9rem;
+            color: $color-secondary01;
+            font-size: 17px;
+            font-family: $font-openSans;
+            margin: auto;
+            width: 60%;
+        }
+    }
+
+    .section-content{
+        margin-top: 2.6rem;
+
+         .bg{
+            width: 100%;
+            height: 100%;
+
+             img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+             }
+         }
+
+         .pricing-container{
+            width: 100%;
+            // display: flex;
+            // justify-content: center;
+            padding-left: 76px;
+            padding-right: 76px;
+            margin-top: -21rem;
+
+             .box-pricing{
+                width: 100%;
+                height: 100%;
+
+                 .title{
+                    width: 100%;
+
+                    h5{
+                        color: $color-primary03;
+
+                         img{
+                            width: 40px;
+                         }
+                    }
+                 }
+
+                 .box{
+                    width: 100%;
+                    padding-top: 2.6rem;
+                    padding-bottom: 2.6rem;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    background-color: #fff;
+                    box-shadow: 0 8px 17px  rgb(224, 224, 224);
+                    border-radius: 25px;
+
+                     &__header{
+                        h2{
+                            color: $color-primary03;
+                            font-weight: 900;
+                            font-size: 32px;
+                        }
+
+                        p{
+                            margin-top: 30px;
+                            color: $color-secondary01;
+
+                             b{
+                                color: $color-primary03;
+                             }
+                        }
+                     }
+
+                     .line{
+                        width: 100%;
+                        height: 1px;
+                        background-color: #dddbdb;
+                     }
+                 }
+             }
+         }
+    }
+}
