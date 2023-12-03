@@ -213,8 +213,8 @@ export default function dataHelper() {
     { label: "Current Users", stat: "41<span>M</span>", id: "elt-4" },
   ];
 
-  const pricingData: any = {
-    stater: [
+  const pricingData = {
+    starter: [
       { text: "Outbound email and <b>in-product</b>" },
       { text: "messaging" },
       { text: "<b>Push messages</b> & notifications" },

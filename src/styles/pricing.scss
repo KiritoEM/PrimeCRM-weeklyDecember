@@ -24,21 +24,21 @@
         }
     }
 
-    .section-content{
+    .section-content {
         margin-top: 2.6rem;
 
-         .bg{
+        .bg {
             width: 100%;
             height: 100%;
 
-             img{
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
-             }
-         }
+            }
+        }
 
-         .pricing-container{
+        .pricing-container {
             width: 100%;
             // display: flex;
             // justify-content: center;
@@ -46,69 +46,96 @@
             padding-right: 76px;
             margin-top: -21rem;
 
-             .box-pricing{
+            .box-pricing {
                 width: 100%;
                 height: 100%;
 
-                 .title{
+                .title {
                     width: 100%;
 
-                    h5{
+                    h5 {
                         color: $color-primary03;
 
-                         img{
+                        img {
                             width: 40px;
-                         }
+                        }
                     }
-                 }
+                }
 
-                 .box{
+                .box {
                     width: 100%;
                     padding-top: 2.6rem;
                     padding-bottom: 2.6rem;
                     padding-left: 40px;
                     padding-right: 40px;
                     background-color: #fff;
-                    box-shadow: 0 8px 22px  rgb(224, 224, 224);
+                    box-shadow: 0 8px 22px rgb(224, 224, 224);
                     border-radius: 25px;
 
-                     &__header{
-                        h2{
+                    &__header {
+                        h2 {
                             color: $color-primary03;
                             font-weight: 900;
                             font-size: 32px;
                         }
 
-                        p{
+                        p {
                             margin-top: 30px;
                             color: $color-secondary01;
 
-                             b{
+                            b {
                                 color: $color-primary03;
-                             }
+                            }
                         }
-                     }
+                    }
 
-                     .line{
+                    .line {
                         width: 100%;
                         height: 1px;
                         background-color: #dddbdb;
-                     }
+                    }
 
-                     .points{
+                    .points {
 
-                         .item{
-                             p{
+                        .item {
+                            p {
                                 color: $color-secondary01;
 
-                                 img{
+                                img {
                                     width: 16px;
-                                 }
-                             }
-                         }
-                     }
-                 }
-             }
-         }
+                                }
+                            }
+                        }
+                    }
+
+                    .button {
+                        margin-top: 1.5rem;
+                        width: 100%;
+
+                        .btn {
+                            width: 100%;
+                            padding-left: 32px;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            border-radius: 5px;
+                            padding-right: 32px;
+                            font-weight: bold;
+                            font-size: 15px;
+                            border-radius: 9px;
+                        }
+
+                        #btn-1{
+                            background-color: #EAEAEA;
+                            color: $color-primary03;
+                        }
+
+                        #btn-2{
+                            background-color: $color-primary03;
+                            color: #dddbdb;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
